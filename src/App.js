@@ -4,6 +4,10 @@ import React from 'react';
 // DOM bindings for React Router
 import { BrowserRouter as Router } from 'react-router-dom';
 
+//> Additional libraries
+// Parallax
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 //> Components
 /**
  * Footer: Global Footer
@@ -17,18 +21,20 @@ import {
 import Routes from './Routes';
 
 class App extends React.Component {
- 
+
   render() {
     return (
-      <Router>
-        <div className="flyout">
-          <Navbar />
-          <main>
-            <Routes />
-          </main>
-          <Footer />
-        </div>
-      </Router>
+      <ParallaxProvider>
+        <Router>
+          <div className="flyout">
+            <Navbar />
+            <main>
+              <Routes />
+            </main>
+            <Footer />
+          </div>
+        </Router>
+      </ParallaxProvider>
     );
   }
 }
