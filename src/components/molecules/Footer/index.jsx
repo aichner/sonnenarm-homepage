@@ -9,61 +9,78 @@ import {
     MDBRow,
     MDBCol,
     MDBContainer,
+    MDBBtn,
+    MDBIcon,
 } from 'mdbreact';
+
+//> Images
+// Signature
+import Sign from '../../../assets/signature.png';
 
 class Footer extends React.Component{
     render(){
         return(
-            <MDBFooter color="agency-red" className="font-small pt-4 mt-4">
+            <MDBFooter color="agency-dark" className="font-small pt-4 mt-4">
                 <MDBContainer className="text-center text-md-left">
                     <MDBRow>
-                    <MDBCol md="6">
-                        <h5 className="title">Footer Content</h5>
+                    <MDBCol md="3" className="runes">
+                        <h5 className="title font-weight-bold">Ich bin Sebastian Sonnenarm</h5>
+                        <img className="img-fluid" src={Sign} alt="Sebastian" />
                         <p>
-                        Here you can use rows and columns here to organize your footer
-                        content.
+                        : Årle ell i dagars hell :<br/>
+                        : enn veit ravnen om eg fell :
                         </p>
                     </MDBCol>
-                    <MDBCol md="3">
-                        <h5 className="title">Links</h5>
-                        <ul>
-                        <li className="list-unstyled">
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li className="list-unstyled">
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li className="list-unstyled">
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li className="list-unstyled">
-                            <a href="#!">Link 4</a>
-                        </li>
-                        </ul>
-                    </MDBCol>
-                    <MDBCol md="3">
-                        <h5 className="title">Links</h5>
-                        <ul>
-                        <li className="list-unstyled">
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li className="list-unstyled">
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li className="list-unstyled">
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li className="list-unstyled">
-                            <a href="#!">Link 4</a>
-                        </li>
-                        </ul>
+                    <MDBCol md="9" className="h-auto flex-center">
+                        <MDBRow className="text-center">
+                            <MDBCol md="12">
+                                <p className="runes font-weight-bold">Wie kannst Du mich unterstützen?</p>
+                            </MDBCol>
+                            <MDBCol md="12">
+                                <a
+                                href="https://patreon.com/sonnenarm"
+                                >
+                                    <MDBBtn 
+                                    color="orange"
+                                    >
+                                        <MDBIcon fab icon="patreon" className="pr-2" />
+                                        <strong>Patreon</strong>
+                                    </MDBBtn>
+                                </a>
+                                <MDBBtn 
+                                color="pink"
+                                >
+                                    <MDBIcon fab icon="instagram" className="pr-2" />
+                                    Instagram
+                                </MDBBtn>
+                                <MDBBtn 
+                                color="elegant"
+                                >
+                                    <MDBIcon icon="mug-hot" className="pr-2" />
+                                    Kaffee spendieren
+                                </MDBBtn>
+                            </MDBCol>
+                        </MDBRow>
                     </MDBCol>
                     </MDBRow>
                 </MDBContainer>
                 <div className="footer-copyright text-center py-3">
                     <MDBContainer fluid>
-                        &copy; {new Date().getFullYear()} Copyright: 
-                        <a href="https://www.aichner-christian.com" target="_blank" rel="noopener noreferrer"> Werbeagentur Christian Aichner </a>
+                        &copy; {new Date().getFullYear()} Copyright: Sebastian Fritzer
+                        <p className="my-2 font-weight-bold ">
+                            Made with 
+                            <i 
+                            className="fas fa-heart pulse red-text pr-1 pl-1"
+                            aria-hidden="true"
+                            ></i> 
+                            by 
+                            <a
+                            href="https://www.aichner-christian.com/?refer=sonnenarm"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            > Werbeagentur Christian Aichner
+                            </a>
+                        </p>
                     </MDBContainer>
                 </div>
             </MDBFooter>
