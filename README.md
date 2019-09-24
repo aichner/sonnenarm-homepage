@@ -1,24 +1,21 @@
 <p align="center">
   <a href="https://www.aichner-christian.com/" target="_blank" rel="noopener noreferrer">
-    <img src="https://www.aichner-christian.com/img/logo/logo_web.png" alt="Agency Logo" height="150">
+    <img src="https://github.com/aichner/Sonnenarm-Homepage/blob/add-basic-setup/src/assets/rune.png?raw=true" alt="Agency Logo" height="150">
   </a>
 </p>
 
-<h3 align="center">Official React MDB Template</h3>
+<h3 align="center">: Sebastian Sonnenarm :</h3>
 
 <p align="center">
-  This repository serves as an entry point for future React MDB Basic projects of the
-  Advertisement Agency Christian Aichner.
   <br>
-  <br>
-  <a href="https://github.com/aichner/React-MDB-Template/issues/new?template=bug_report.md">Report bug</a>
+  <a href="https://github.com/aichner/Sonnenarm-Homepage/issues/new?template=bug_report.md">Report bug</a>
   ·
-  <a href="https://github.com/aichner/React-MDB-Template/issues/new?template=feature_request.md">Request feature</a>
+  <a href="https://github.com/aichner/Sonnenarm-Homepage/issues/new?template=feature_request.md">Request feature</a>
   ·
   <a href="https://www.aichner-christian.com/damn/dev">Blog</a>
   <br>
   <br>
-  <a href="https://www.codacy.com/app/aichner/React-MDB-Template">
+  <a href="https://www.codacy.com/app/aichner/Sonnenarm-Homepage">
     <img src="https://api.codacy.com/project/badge/Grade/579c145ee6cf4d7e8ae7c1c78a13617a" />
   </a>
 </p>
@@ -39,8 +36,12 @@
 
 ## [](#quick-start)Quick start
 
-- Clone the repository: `git clone https://github.com/aichner/React-MDB-Template.git react-mdb`
-- Go to the new folder `cd react-mdb`
+- Clone the repository: `git clone https://github.com/aichner/Sonnenarm-Homepage.git sonnenarm`
+- Purchase a MDB React Pro license: [MDB React Pro](https://mdbootstrap.com/products/react-ui-kit/)
+- Go to the new folder `cd sonnenarm`
+- Download the purchased MDB React Pro version and drag the `mdbreact-X.XX.XX.tgz` into the root folder of the project
+- Change the `mdbreact` dependency in the `package.json` to the `mdbreact-X.XX.XX.tgz` file
+- Add `mdbreact-*` to the `.gitignore` file
 - Run `npm install`
 - Start with `npm start`
 
