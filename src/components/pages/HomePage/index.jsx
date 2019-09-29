@@ -6,6 +6,7 @@ import React from 'react';
 import {
   Intro,
   About,
+  Merch,
 } from '../../organisms';
 
 class HomePage extends React.Component {
@@ -14,6 +15,7 @@ class HomePage extends React.Component {
       <>
         <Intro />
         <About />
+        <Merch />
       </>
     );
   }
