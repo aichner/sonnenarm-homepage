@@ -41,12 +41,6 @@ class MinimalisticIntro extends React.Component {
     this.handleScroll = this.handleScroll.bind(this);
   }
 
-  handleTogglerClick = () => {
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-  };
-
   getGrayscale = () => {
     return {
       filter: `grayscale(${100 - (window.pageYOffset / 3)}%)`
@@ -74,7 +68,6 @@ class MinimalisticIntro extends React.Component {
   };
 
   handleScroll(event) {
-    console.log((window.pageYOffset / 400));
     if(window.pageYOffset <= 400){
       this.setState({
         greyscale: 100 - (window.pageYOffset / 4),
@@ -92,15 +85,6 @@ class MinimalisticIntro extends React.Component {
   };
 
   render() {
-    const navStyle = { marginTop: "4rem" };
-    const overlay = (
-      <div
-        id="sidenav-overlay"
-        style={{ backgroundColor: "transparent" }}
-        onClick={this.handleTogglerClick}
-      />
-    );
-
     return (
       <div id="intro" style={this.getGrayscale()}>
         <MDBView src={BG}>
