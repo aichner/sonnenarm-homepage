@@ -34,7 +34,7 @@ class Footer extends React.Component{
                     <MDBCol md="9" className="h-auto flex-center">
                         <MDBRow className="text-center">
                             <MDBCol md="12">
-                                <p className="runes font-weight-bold">Wie kannst Du mich unterstützen?</p>
+                                <p className="runes font-weight-bold">Wie du mich unterstützen kannst</p>
                             </MDBCol>
                             <MDBCol md="12">
                                 <a
