@@ -17,7 +17,7 @@ import {
 } from 'mdbreact';
 
 //> CSS
-import './about.scss';
+import './gallery.scss';
 
 //> Images
 // To be added
