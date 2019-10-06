@@ -20,7 +20,13 @@ import {
 import './gallery.scss';
 
 //> Images
-// To be added
+import Rune from '../../../assets/images/odin.jpg';
+
+//> Data
+// Images
+const images = [
+  { img: Rune, title: "The rune" }
+];
 
 class Gallery extends React.Component {
   constructor(props) {
@@ -34,7 +40,21 @@ class Gallery extends React.Component {
     return (
       <div id="about">
         <MDBContainer className="text-white">
-          Gallery
+          <MDBRow>
+            {images.map((image, key) => {
+              return(
+                <MDBCol md="4">
+                  <img 
+                  className="img-fluid"
+                  src={image.img}
+                  alt={image.title}
+                  />
+                </MDBCol>
+              );
+            })}
+            
+
+          </MDBRow>
         </MDBContainer>
       </div>
     );
