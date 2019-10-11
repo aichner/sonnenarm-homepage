@@ -20,7 +20,7 @@ import Sign from '../../../assets/signature.png';
 class Footer extends React.Component{
     render(){
         return(
-            <MDBFooter color="agency-dark" className="font-small pt-4 mt-4">
+            <MDBFooter color="agency-dark" className="font-small pt-4">
                 <MDBContainer className="text-center text-md-left">
                     <MDBRow>
                     <MDBCol md="3" className="runes">
@@ -34,7 +34,7 @@ class Footer extends React.Component{
                     <MDBCol md="9" className="h-auto flex-center">
                         <MDBRow className="text-center">
                             <MDBCol md="12">
-                                <p className="runes font-weight-bold">Wie kannst Du mich unterstützen?</p>
+                                <p className="runes font-weight-bold">Wie du mich unterstützen kannst</p>
                             </MDBCol>
                             <MDBCol md="12">
                                 <a

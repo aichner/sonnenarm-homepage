@@ -5,6 +5,9 @@ import React from 'react';
 //> Components
 import {
   Intro,
+  About,
+  Gallery,
+  Merch,
 } from '../../organisms';
 
 class HomePage extends React.Component {
@@ -12,6 +15,9 @@ class HomePage extends React.Component {
     return (
       <>
         <Intro />
+        <About />
+        <Gallery />
+        <Merch />
       </>
     );
   }
