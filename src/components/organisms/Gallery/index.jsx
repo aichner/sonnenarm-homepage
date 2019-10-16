@@ -20,13 +20,7 @@ import {
 import './gallery.scss';
 
 //> Images
-import Rune from '../../../assets/images/odin.jpg';
-
-//> Data
-// Images
-const images = [
-  { img: Rune, title: "The rune" }
-];
+import images from '../../../assets/images';
 
 class Gallery extends React.Component {
   constructor(props) {
@@ -43,11 +37,12 @@ class Gallery extends React.Component {
           <MDBRow>
             {images.map((image, key) => {
               return(
-                <MDBCol md="4">
+                <MDBCol key={key}>
                   <img 
                   className="img-fluid"
-                  src={image.img}
+                  src={image.url}
                   alt={image.title}
+                  style={{maxHeight: "300px", minWidth: "200px"}}
                   />
                 </MDBCol>
               );
