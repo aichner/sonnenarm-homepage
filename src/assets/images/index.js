@@ -36,7 +36,10 @@ const images = [
     { 
         url: img00, 
         title: "HELVEGEN : | Laukr - Hugin und ein Meer von Regen", 
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar elit mi, et faucibus risus pulvinar nec. Phasellus ut hendrerit nulla. Sed tincidunt libero urna, vitae porta nisi imperdiet non. Duis imperdiet ligula eget quam commodo, at convallis ipsum cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", 
+        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar elit mi, et faucibus 
+        risus pulvinar nec. Phasellus ut hendrerit nulla. Sed tincidunt libero urna, vitae porta nisi 
+        imperdiet non. Duis imperdiet ligula eget quam commodo, at convallis ipsum cursus. Orci varius 
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.`, 
         available: false, 
         details: {
             dimensions: "20x20",
@@ -47,7 +50,10 @@ const images = [
     { 
         url: img01, 
         title: "HELVEGEN : | Laukr - Hugin und ein Meer von Regen", 
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar elit mi, et faucibus risus pulvinar nec. Phasellus ut hendrerit nulla. Sed tincidunt libero urna, vitae porta nisi imperdiet non. Duis imperdiet ligula eget quam commodo, at convallis ipsum cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", 
+        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar elit mi, et faucibus 
+        risus pulvinar nec. Phasellus ut hendrerit nulla. Sed tincidunt libero urna, vitae porta nisi 
+        imperdiet non. Duis imperdiet ligula eget quam commodo, at convallis ipsum cursus. Orci varius 
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.`,
         available: true, 
         details: {
             dimensions: "20x20",
