@@ -116,9 +116,13 @@ class Gallery extends React.Component {
                 <MDBCol md="8">
                   <p className="lead font-weight-bold runes">{this.state.image.title}</p>
                   {this.state.image.text ? (
-                    <p>{this.state.image.text}</p>
+                    <p 
+                    className={this.state.image.runes ? "runes normalize" : undefined}
+                    >
+                    {this.state.image.text}
+                    </p>
                   ) : (
-                    <p>Zu diesem Gemälde sind keine Daten vorhanden.</p>
+                    <p>Zu diesem Gemälde ist keine Beschreibung vorhanden.</p>
                   )
                     
                   }
@@ -135,14 +139,14 @@ class Gallery extends React.Component {
                       }
                       {this.state.image.details.date &&
                         <tr>
-                          <td>Entstehdatum</td>
+                          <td>Entstehung</td>
                           <td>{this.state.image.details.date}</td>
                         </tr>
                       }
-                      {this.state.image.details.weight &&
+                      {this.state.image.details.material &&
                         <tr>
-                          <td>Gewicht (kg)</td>
-                          <td>{this.state.image.details.weight}</td>
+                          <td>Material</td>
+                          <td>{this.state.image.details.material}</td>
                         </tr>
                       }
                       </MDBTableBody>

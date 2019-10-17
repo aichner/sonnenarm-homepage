@@ -17,6 +17,8 @@
         }
     }
     .col-md-3{
+        align-self: center;
+        margin-bottom: 1em;
         &.available{
             &::after{
                 content: 'Verfügbar';
@@ -61,6 +63,9 @@
             background-color: #2e2e2e !important;
             .table{
                 color: #bebebe;
+            }
+            .normalize{
+                font-size: 1em;
             }
         }
         .modal-footer{
