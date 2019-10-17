@@ -322,7 +322,7 @@ const images = [
         url: img0004, 
         title: "Sommerträume IV", 
         text: ``, 
-        available: true, 
+        available: false, 
         details: {
             dimensions: "30 x 20",
             material: "Kohle auf Papier",
@@ -333,7 +333,7 @@ const images = [
         url: img0005, 
         title: "Sommerträume II", 
         text: ``, 
-        available: true, 
+        available: false, 
         details: {
             dimensions: "30 x 20",
             material: "Kohle auf Papier",
