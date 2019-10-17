@@ -1,11 +1,13 @@
 #gallery{
     background-color: black;
     // Checkbox fill color
-    .form-check-input[type="checkbox"].filled-in:checked + label:after, label.btn input[type="checkbox"].filled-in:checked + label:after{
+    .form-check-input[type="checkbox"].filled-in:checked + label:after,
+    label.btn input[type="checkbox"].filled-in:checked + label:after{
         border: 2px solid white !important;
         background-color: white !important;
     }
-    .form-check-input[type="checkbox"].filled-in:checked + label:before, label.btn input[type="checkbox"].filled-in:checked + label:before{
+    .form-check-input[type="checkbox"].filled-in:checked + label:before,
+    label.btn input[type="checkbox"].filled-in:checked + label:before{
         border-right: 2px solid black;
         border-bottom: 2px solid black;
     }
