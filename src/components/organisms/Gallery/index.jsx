@@ -19,6 +19,7 @@ import {
     MDBModalHeader,
     MDBTable,
     MDBTableBody,
+    MDBInput,
 } from 'mdbreact';
 
 //> CSS
@@ -31,7 +32,7 @@ class Gallery extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      showAvailable: false,
     }
   }
   
@@ -40,6 +41,12 @@ class Gallery extends React.Component {
       modal: true,
       image: image,
     });
+  }
+
+  handleCheckboxClick = (e) => {
+    this.setState({
+      showAvailable: !this.state.showAvailable
+    })
   }
 
   toggle = () => {
@@ -53,13 +60,30 @@ class Gallery extends React.Component {
     return (
       <div id="gallery">
         <MDBContainer className="text-white">
+        <h2 className="font-weight-bold runes text-center">Ausstellung</h2>
+        <div className="py-4 text-center">
+          <MDBInput 
+          label="Verfügbarkeit anzeigen" 
+          filled
+          type="checkbox"
+          id="checkbox1"
+          checked={this.state.showAvailable}
+          onClick={(e) => this.handleCheckboxClick(e)}
+          />
+        </div>
           <MDBRow>
             {images.map((image, key) => {
               images[key].uid = Math.round(new Date() / (key + 1));
               return(
-                <MDBCol md="3" key={key} className="align-self-center">
+                <MDBCol 
+                md="3"
+                key={key}
+                className={this.state.showAvailable && (
+                image.available ? "align-self-center available" : "align-self-center sold")
+                }
+                >
                   <MDBView className={this.state.image && this.state.image.uid === image.uid ? "active" : undefined}>
-                    <img 
+                    <img
                     className="img-fluid"
                     src={image.url}
                     alt={image.title}

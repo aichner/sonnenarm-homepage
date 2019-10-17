@@ -1,5 +1,45 @@
 #gallery{
     background-color: black;
+    // Checkbox fill color
+    .form-check-input[type="checkbox"].filled-in:checked + label:after, label.btn input[type="checkbox"].filled-in:checked + label:after{
+        border: 2px solid white !important;
+        background-color: white !important;
+    }
+    .form-check-input[type="checkbox"].filled-in:checked + label:before, label.btn input[type="checkbox"].filled-in:checked + label:before{
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    h2{
+        &.runes{
+            font-size: 3rem;
+        }
+    }
+    .col-md-3{
+        &.available{
+            &::after{
+                content: 'Verfügbar';
+                position: relative;
+                padding: .2em;
+                text-align: center;
+                background-color: green;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        }
+        &.sold{
+            &:after{
+                content: 'Nicht verfügbar';
+                position: relative;
+                padding: .2em;
+                text-align: center;
+                background-color: #2e2e2e;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        }
+    }
     .view{
         cursor: pointer;
         transition: filter .5s ease;
