@@ -33,39 +33,28 @@ import img31 from './31.jpg';
 import img32 from './32.jpg';
 
 const images = [
-    { url: img00, title: "" },
-    { url: img01, title: "" },
-    { url: img02, title: "" },
-    { url: img03, title: "" },
-    { url: img04, title: "" },
-    { url: img05, title: "" },
-    { url: img06, title: "" },
-    { url: img07, title: "" },
-    { url: img08, title: "" },
-    { url: img09, title: "" },
-    { url: img10, title: "" },
-    { url: img11, title: "" },
-    { url: img12, title: "" },
-    { url: img13, title: "" },
-    { url: img14, title: "" },
-    { url: img15, title: "" },
-    { url: img16, title: "" },
-    { url: img17, title: "" },
-    { url: img18, title: "" },
-    { url: img19, title: "" },
-    { url: img20, title: "" },
-    { url: img21, title: "" },
-    { url: img22, title: "" },
-    { url: img23, title: "" },
-    { url: img24, title: "" },
-    { url: img25, title: "" },
-    { url: img26, title: "" },
-    { url: img27, title: "" },
-    { url: img28, title: "" },
-    { url: img29, title: "" },
-    { url: img30, title: "" },
-    { url: img31, title: "" },
-    { url: img32, title: "" }
+    { 
+        url: img00, 
+        title: "HELVEGEN : | Laukr - Hugin und ein Meer von Regen", 
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar elit mi, et faucibus risus pulvinar nec. Phasellus ut hendrerit nulla. Sed tincidunt libero urna, vitae porta nisi imperdiet non. Duis imperdiet ligula eget quam commodo, at convallis ipsum cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", 
+        available: false, 
+        details: {
+            dimensions: "20x20",
+            weight: "2,5",
+            date: "19.01.2019"
+        }
+    },
+    { 
+        url: img01, 
+        title: "HELVEGEN : | Laukr - Hugin und ein Meer von Regen", 
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar elit mi, et faucibus risus pulvinar nec. Phasellus ut hendrerit nulla. Sed tincidunt libero urna, vitae porta nisi imperdiet non. Duis imperdiet ligula eget quam commodo, at convallis ipsum cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", 
+        available: false, 
+        details: {
+            dimensions: "20x20",
+            weight: "2,5",
+            date: "19.01.2019"
+        }
+    },
 ]
 
 export default images;

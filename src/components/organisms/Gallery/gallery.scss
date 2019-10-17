@@ -2,6 +2,28 @@
     background-color: black;
     .view{
         cursor: pointer;
+        transition: filter .5s ease;
+        &:hover{
+            filter: hue-rotate(50deg) grayscale(100%) contrast(200%);
+        }
+        &.active{
+            filter: hue-rotate(50deg) grayscale(100%) contrast(200%);
+        }
+    }
+    .modal-dialog{
+        .close{
+            color: red;
+            text-shadow: none;
+        }
+        .modal-content{
+            background-color: #2e2e2e !important;
+            .table{
+                color: #bebebe;
+            }
+        }
+        .modal-footer{
+            border-top: 1px solid gray;
+        }
     }
 }
 
