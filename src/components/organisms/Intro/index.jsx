@@ -36,14 +36,13 @@ class MinimalisticIntro extends React.Component {
       collapsed: false,
       greyscale: 100,
       opacity: 1,
-      textSize: 2.5,
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
 
   getGrayscale = () => {
     return {
-      filter: `grayscale(${100 - (window.pageYOffset / 3)}%)`
+      filter: `grayscale(${this.state.greyscale}%)`
     }
   }
 
@@ -53,14 +52,14 @@ class MinimalisticIntro extends React.Component {
     }
   }
 
-  getTextSize = () => {
-    return {
-      fontSize: this.state.textSize+"rem"
-    }
-  }
-
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    if(window.pageYOffset < 400) {
+      window.addEventListener('scroll', this.handleScroll);
+    } else {
+      this.setState({
+        greyscale: 0,
+      });
+    }
   };
 
   componentWillUnmount() {
@@ -72,14 +71,13 @@ class MinimalisticIntro extends React.Component {
       this.setState({
         greyscale: 100 - (window.pageYOffset / 4),
         opacity: 1 - (window.pageYOffset / 200),
-        textSize: 2.5 + (window.pageYOffset / 400),
       });
     } else if(window.pageYOffset > 400){
       this.setState({
         greyscale: 0,
         opacity: 0,
         opacityLinks: 0,
-      });
+      }, () => window.removeEventListener('scroll', this.handleScroll));
     }
     
   };
@@ -96,7 +94,6 @@ class MinimalisticIntro extends React.Component {
                     <img src={Rune} alt="Rune"/>
                     <h5 
                     className="pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 runes"
-                    style={this.getTextSize()}
                     >
                       : Sebastian Sonnenarm :
                     </h5>
