@@ -6,10 +6,12 @@ import { Route, Switch } from 'react-router-dom';
 
 //> Components
 /**
- * HomePage: A basic template page
+ * HomePage: The Homepage
+ * AboutPage: About (Impressum)
  */
 import {
-  HomePage
+  HomePage,
+  AboutPage
 } from './components/pages';
 
 class Routes extends React.Component {
@@ -17,12 +19,7 @@ class Routes extends React.Component {
     return (
       <Switch>
         <Route exact path='/' component={HomePage} />
-          
-        <Route
-          render={function () {
-            return <h1>Not Found</h1>;
-          }}
-        />
+        <Route exact path='/about' component={AboutPage} />
       </Switch>
     );
   }

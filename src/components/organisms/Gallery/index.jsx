@@ -11,12 +11,10 @@ import {
     MDBBtn,
     MDBView,
     MDBContainer,
-    MDBFormInline,
     MDBIcon,
     MDBModal,
     MDBModalBody,
     MDBModalFooter,
-    MDBModalHeader,
     MDBTable,
     MDBTableBody,
     MDBInput,
@@ -59,7 +57,7 @@ class Gallery extends React.Component {
   render() {
     return (
       <div id="gallery">
-        <MDBContainer className="text-white">
+        <MDBContainer className="text-white py-4">
         <h2 className="font-weight-bold runes text-center">Ausstellung</h2>
         <div className="py-4 text-center">
           <MDBInput 
@@ -104,14 +102,29 @@ class Gallery extends React.Component {
                   alt={this.state.image.title}
                   className="img-fluid mb-3"
                   />
+                  {this.state.image.available ? (
+                    <a
+                    href={this.state.image.available ? (`mailto:sonnenarm@aichner-christian.com?
+subject=Anfrage Bildkauf&
+body=Hey, ich bin interessiert das Gemälde mit dem Namen ${this.state.image.title} zu erwerben.`) : (
+undefined)}
+                    >
+                      <MDBBtn 
+                      color="white"
+                      >
+                      <MDBIcon icon="shopping-cart" className="pr-2" />
+                      Anfragen
+                      </MDBBtn>
+                    </a>
+                  ) : (
                     <MDBBtn 
                     color="white"
-                    disabled={!this.state.image.available}
+                    disabled={true}
                     >
                     <MDBIcon icon="shopping-cart" className="pr-2" />
-                    {this.state.image.available ? "Anfragen" : "Nicht verfügbar"}
+                    Nicht verfügbar
                     </MDBBtn>
-                  
+                  )}
                 </MDBCol>
                 <MDBCol md="8">
                   <p className="lead font-weight-bold runes">{this.state.image.title}</p>
@@ -157,14 +170,6 @@ class Gallery extends React.Component {
               </MDBRow>
             </MDBModalBody>
             <MDBModalFooter>
-              <MDBBtn 
-              color="cyan"
-              rounded
-              onClick={this.toggle}
-              >
-              <MDBIcon icon="share" className="pr-2" />
-              Teilen
-              </MDBBtn>
               <MDBBtn 
               color="red"
               rounded

@@ -11,11 +11,6 @@
         border-right: 2px solid black;
         border-bottom: 2px solid black;
     }
-    h2{
-        &.runes{
-            font-size: 3rem;
-        }
-    }
     .col-md-3{
         align-self: center;
         margin-bottom: 1em;
@@ -63,6 +58,10 @@
             background-color: #2e2e2e !important;
             .table{
                 color: #bebebe;
+
+            }
+            .table td, .table th{
+                border-top: 1px solid #4e4e4e;
             }
             .normalize{
                 font-size: 1em;

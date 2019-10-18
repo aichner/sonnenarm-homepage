@@ -1,9 +1,11 @@
 //> Components
 // Import all components to export them for easy access from parent components
 import HomePage from './HomePage';
+import AboutPage from './AboutPage';
 
 export {
     HomePage,
+    AboutPage,
 };
 
 /** 
