@@ -122,7 +122,7 @@ undefined)}
                     disabled={true}
                     >
                     <MDBIcon icon="shopping-cart" className="pr-2" />
-                    Nicht verfügbar"
+                    Nicht verfügbar
                     </MDBBtn>
                   )}
                 </MDBCol>
