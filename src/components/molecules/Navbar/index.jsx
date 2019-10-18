@@ -11,8 +11,8 @@ import {
     MDBNavbarToggler,
     MDBCollapse,
     MDBNavItem,
-    MDBNavLink,
     MDBContainer,
+    MDBSmoothScroll,
 } from 'mdbreact';
 
 //> CSS
@@ -51,7 +51,9 @@ class Navbar extends React.Component{
                 <MDBNavbar color="agency-dark" dark expand="md" fixed="top" scrolling>
                 <MDBContainer>
                     <MDBNavbarBrand href="/" className="py-0 font-weight-bold">
-                    <strong className="align-middle runes">Sebastian Sonnenarm</strong>
+                        <strong className="align-middle runes">
+                        Sebastian Sonnenarm
+                        </strong>
                     </MDBNavbarBrand>
                     <MDBNavbarToggler
                     onClick={this.toggleCollapse("mainNavbarCollapse")}
@@ -63,13 +65,19 @@ class Navbar extends React.Component{
                     >
                     <MDBNavbarNav right className="runes">
                         <MDBNavItem>
-                            <MDBNavLink
-                                exact
-                                to="/"
-                                onClick={this.closeCollapse("mainNavbarCollapse")}
-                            >
+                            <MDBSmoothScroll to="intro">
                                 <strong>Home</strong>
-                            </MDBNavLink>
+                            </MDBSmoothScroll>
+                        </MDBNavItem>
+                        <MDBNavItem>
+                            <MDBSmoothScroll to="about">
+                                <strong>Über mich</strong>
+                            </MDBSmoothScroll>
+                        </MDBNavItem>
+                        <MDBNavItem>
+                            <MDBSmoothScroll to="gallery">
+                                <strong>Ausstellung</strong>
+                            </MDBSmoothScroll>
                         </MDBNavItem>
                     </MDBNavbarNav>
                     </MDBCollapse>
