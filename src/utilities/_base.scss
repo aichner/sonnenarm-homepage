@@ -87,6 +87,13 @@
   animation: pulse 1s infinite;
 }
 
+// Font size fix for runes in h2
+h2{
+  &.runes{
+      font-size: 3rem;
+  }
+}
+
 /** 
  * SPDX-License-Identifier: (EUPL-1.2)
  * Copyright © 2019 Werbeagentur Christian Aichner

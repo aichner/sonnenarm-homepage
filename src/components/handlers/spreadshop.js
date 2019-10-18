@@ -1,11 +1,11 @@
 //> Fetching
 import axios from 'axios';
 
-const spread_shop_config = {
+/*const spread_shop_config = {
     shopName: 'sonnenarm',
     prefix: 'https://shop.spreadshirt.de',
     baseId: 'shop',
-};
+};*/
 
 export function getSpreadShopItems() {
     axios.get(`https://api.spreadshirt.net/api/v1/shops/205909?mediaType=json`, {

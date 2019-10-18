@@ -7,7 +7,6 @@ import {
   Intro,
   About,
   Gallery,
-  Merch,
 } from '../../organisms';
 
 class HomePage extends React.Component {
@@ -17,7 +16,6 @@ class HomePage extends React.Component {
         <Intro />
         <About />
         <Gallery />
-        <Merch />
       </>
     );
   }

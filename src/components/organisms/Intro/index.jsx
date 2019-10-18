@@ -11,7 +11,6 @@ import {
     MDBBtn,
     MDBView,
     MDBContainer,
-    MDBFormInline,
     MDBIcon,
     MDBAnimation,
 } from 'mdbreact';

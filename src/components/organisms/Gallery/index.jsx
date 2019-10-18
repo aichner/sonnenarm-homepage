@@ -11,12 +11,10 @@ import {
     MDBBtn,
     MDBView,
     MDBContainer,
-    MDBFormInline,
     MDBIcon,
     MDBModal,
     MDBModalBody,
     MDBModalFooter,
-    MDBModalHeader,
     MDBTable,
     MDBTableBody,
     MDBInput,
@@ -59,7 +57,7 @@ class Gallery extends React.Component {
   render() {
     return (
       <div id="gallery">
-        <MDBContainer className="text-white">
+        <MDBContainer className="text-white py-4">
         <h2 className="font-weight-bold runes text-center">Ausstellung</h2>
         <div className="py-4 text-center">
           <MDBInput 
