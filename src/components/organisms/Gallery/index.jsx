@@ -171,14 +171,6 @@ undefined)}
             </MDBModalBody>
             <MDBModalFooter>
               <MDBBtn 
-              color="cyan"
-              rounded
-              onClick={this.toggle}
-              >
-              <MDBIcon icon="share" className="pr-2" />
-              Teilen
-              </MDBBtn>
-              <MDBBtn 
               color="red"
               rounded
               onClick={this.toggle}
