@@ -1,6 +1,8 @@
 //> React
 // Contains all the functionality necessary to define React components
 import React from 'react';
+// React Router
+import { Link } from 'react-router-dom';
 
 //> MDB
 // "Material Design for Bootstrap" is a great UI design framework
@@ -66,6 +68,7 @@ class Footer extends React.Component{
                 </MDBContainer>
                 <div className="footer-copyright text-center py-3">
                     <MDBContainer fluid>
+                        <Link to="/about">Impressum</Link> | 
                         &copy; {new Date().getFullYear()} Copyright: Sebastian Fritzer
                         <p className="my-2 font-weight-bold ">
                             Made with 
