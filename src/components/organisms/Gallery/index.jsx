@@ -102,14 +102,29 @@ class Gallery extends React.Component {
                   alt={this.state.image.title}
                   className="img-fluid mb-3"
                   />
+                  {this.state.image.available ? (
+                    <a
+                    href={this.state.image.available ? (`mailto:sonnenarm@aichner-christian.com?
+subject=Anfrage Bildkauf&
+body=Hey, ich bin interessiert das Gemälde mit dem Namen ${this.state.image.title} zu erwerben.`) : (
+undefined)}
+                    >
+                      <MDBBtn 
+                      color="white"
+                      >
+                      <MDBIcon icon="shopping-cart" className="pr-2" />
+                      Anfragen
+                      </MDBBtn>
+                    </a>
+                  ) : (
                     <MDBBtn 
                     color="white"
-                    disabled={!this.state.image.available}
+                    disabled={true}
                     >
                     <MDBIcon icon="shopping-cart" className="pr-2" />
-                    {this.state.image.available ? "Anfragen" : "Nicht verfügbar"}
+                    Nicht verfügbar"
                     </MDBBtn>
-                  
+                  )}
                 </MDBCol>
                 <MDBCol md="8">
                   <p className="lead font-weight-bold runes">{this.state.image.title}</p>

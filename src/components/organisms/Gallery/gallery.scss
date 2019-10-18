@@ -58,6 +58,10 @@
             background-color: #2e2e2e !important;
             .table{
                 color: #bebebe;
+
+            }
+            .table td, .table th{
+                border-top: 1px solid #4e4e4e;
             }
             .normalize{
                 font-size: 1em;
