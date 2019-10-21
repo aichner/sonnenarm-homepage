@@ -137,7 +137,7 @@ const images = [
     { 
         url: img16, 
         title: ": Die kalte Wand | Schlagschatten", 
-        text: `Herzen schalgen gegen die Wand\nund Schatten gegen den Verstand.\n\nIch träume,\nvoller Bedauern\n
+        text: `Herzen schlagen gegen die Wand\nund Schatten gegen den Verstand.\n\nIch träume,\nvoller Bedauern\n
         von Sonnenschein\nhinter kalten Mauern.\n\nIch träume\nbis der Wind wie Licht,\ndie Kälte durchbricht.\n
         Bis das Leben erwacht,\nbis ans Ende der Nacht.\n\nO mein Sonnenschein,\ndas Herz überflutet.\nOh mein
         Sonnenschein,\nder Verstand blutet.`, 
@@ -166,7 +166,7 @@ const images = [
         text: `Bäume schreien gegen die Zeit\nund Vögel der Sonne hinterher.\nSchweigend,\nwie ein Blatt im Wind 
         tanzend\nschwinden Gedanken an Erinnerungen.\n\nVerschwinde\nund verlier dich in Vergessenheit.\nVerliere\n
         und halte dein Versprechen.\n\nFolge kalten Träumen\nund träume von weißer Kälte.\nVerschwinde in der kalten 
-        Wand\nUnd verlier dich in dir.\n\nDoch hinter müden AUgen\nund kalten Wänden\nnur Zorn und 
+        Wand\nUnd verlier dich in dir.\n\nDoch hinter müden Augen\nund kalten Wänden\nnur Zorn und 
         Verständnislosigkeit.\nNur Zorn und Verständnislosigkeit.`, 
         available: true, 
         runes: true,
