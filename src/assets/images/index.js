@@ -72,7 +72,7 @@ const images = [
         text: `Diese Bild symbolisiert die Gebundenheit an den Kreislauf des Lebens. Wir sehen wie ein Mann an die
         Algiz-Rune (Lebensrune) gebunden ist, während uns der Hintergrund und die Farbwahl an einen Sonnenuntergang
         erinnern soll. Die Runenkombination auf dem Baumstamm steht für die innere Kraft und Stärke sein Schicksal
-        selbst zu lenken, während die Rune auf der Brust des Mannens nichts anderes ist als der Wille durch eine 
+        selbst zu lenken, während die Rune auf der Brust des Mannes nichts anderes ist als der Wille durch eine 
         schwere Zeit durchzuhauen, mit dem Versprechen gebunden dadurch zu wachsen.`, 
         available: false, 
         details: {
