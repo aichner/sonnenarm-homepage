@@ -98,28 +98,14 @@ class MinimalisticIntro extends React.Component {
                       : Sebastian Sonnenarm :
                     </h5>
                     <div>
-                      <a
-                      href="https://shop.spreadshirt.at/sebastian-sonnenarm"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >
-                        <MDBBtn 
-                        outline
-                        color="white"
-                        className="runes font-weight-bold"
-                        size="lg"
-                        >
-                          <MDBIcon icon="shopping-basket" className="mr-2"></MDBIcon>
-                          Merch
-                        </MDBBtn>
-                      </a>
                       <MDBSmoothScroll to="gallery">
                       <MDBBtn 
                       color="white"
                       className="runes font-weight-bold"
                       size="lg"
                       >
-                        <MDBIcon icon="book" className="mr-2"></MDBIcon> Ausstellung
+                        <MDBIcon icon="book" className="mr-2"></MDBIcon>
+                        Ausstellung
                       </MDBBtn>
                       </MDBSmoothScroll>
                     </div>
