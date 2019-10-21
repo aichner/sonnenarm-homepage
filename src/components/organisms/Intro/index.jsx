@@ -97,18 +97,16 @@ class MinimalisticIntro extends React.Component {
                     >
                       : Sebastian Sonnenarm :
                     </h5>
-                    <div>
-                      <MDBSmoothScroll to="gallery">
-                      <MDBBtn 
+                      <MDBSmoothScroll 
+                      to="gallery"
+                      btn
                       color="white"
                       className="runes font-weight-bold"
                       size="lg"
                       >
                         <MDBIcon icon="book" className="mr-2"></MDBIcon>
                         Ausstellung
-                      </MDBBtn>
                       </MDBSmoothScroll>
-                    </div>
                   </MDBCol>
                 </MDBRow>
               </Parallax>
