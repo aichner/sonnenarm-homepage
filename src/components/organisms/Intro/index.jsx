@@ -8,7 +8,6 @@ import {
     MDBMask,
     MDBRow,
     MDBCol,
-    MDBBtn,
     MDBView,
     MDBContainer,
     MDBIcon,
@@ -97,47 +96,34 @@ class MinimalisticIntro extends React.Component {
                     >
                       : Sebastian Sonnenarm :
                     </h5>
-                    <div>
-                      <a
-                      href="https://shop.spreadshirt.at/sebastian-sonnenarm"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >
-                        <MDBBtn 
-                        outline
-                        color="white"
-                        className="runes font-weight-bold"
-                        size="lg"
-                        >
-                          <MDBIcon icon="shopping-basket" className="mr-2"></MDBIcon>
-                          Merch
-                        </MDBBtn>
-                      </a>
-                      <MDBSmoothScroll to="gallery">
-                      <MDBBtn 
+                      <MDBSmoothScroll 
+                      to="gallery"
+                      btn
                       color="white"
                       className="runes font-weight-bold"
                       size="lg"
                       >
-                        <MDBIcon icon="book" className="mr-2"></MDBIcon> Ausstellung
-                      </MDBBtn>
+                        <MDBIcon icon="book" className="mr-2"></MDBIcon>
+                        Ausstellung
                       </MDBSmoothScroll>
-                    </div>
                   </MDBCol>
                 </MDBRow>
               </Parallax>
               {this.state.opacity > 0 &&
-                <MDBBtn 
-                className="btn-scroll"
-                outline
+                <MDBSmoothScroll 
+                to="about"
+                btn
                 color="white"
                 rounded
+                className="btn-scroll d-inline"
+                size="lg"
+                outline
                 style={this.getOpacity()}
                 >
                   <MDBAnimation type="pulse" infinite duration="1s">
                     <MDBIcon icon="angle-down" size="2x" />
                   </MDBAnimation>
-                </MDBBtn>
+                </MDBSmoothScroll>
               }
             </MDBContainer>
           </MDBMask>
