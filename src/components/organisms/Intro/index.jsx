@@ -8,7 +8,6 @@ import {
     MDBMask,
     MDBRow,
     MDBCol,
-    MDBBtn,
     MDBView,
     MDBContainer,
     MDBIcon,
@@ -111,17 +110,20 @@ class MinimalisticIntro extends React.Component {
                 </MDBRow>
               </Parallax>
               {this.state.opacity > 0 &&
-                <MDBBtn 
-                className="btn-scroll"
-                outline
+                <MDBSmoothScroll 
+                to="about"
+                btn
                 color="white"
                 rounded
+                className="btn-scroll d-inline"
+                size="lg"
+                outline
                 style={this.getOpacity()}
                 >
                   <MDBAnimation type="pulse" infinite duration="1s">
                     <MDBIcon icon="angle-down" size="2x" />
                   </MDBAnimation>
-                </MDBBtn>
+                </MDBSmoothScroll>
               }
             </MDBContainer>
           </MDBMask>
