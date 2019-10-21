@@ -12,6 +12,7 @@ import img19 from './19.jpg';
 import img21 from './21.jpg';
 import img23 from './23.jpg';
 import img24 from './24.jpg';
+import img25 from './25.jpg';
 // Off images
 import img0001 from './off/1.jpg';
 import img0002 from './off/2.jpg';
@@ -35,6 +36,17 @@ import img006 from './off2/6.jpg';
 import img007 from './off2/7.jpg';
 
 const images = [
+    { 
+        url: img25, 
+        title: "Sucht / selbstbildnis", 
+        text: "", 
+        available: false, 
+        details: {
+            dimensions: "100 x 80",
+            material: "Ölfarbe und Ölkreide auf Holzplatte",
+            date: "Oktober 2019"
+        }
+    },
     { 
         url: img00, 
         title: ": HELVEGEN : | Laukr - Hugin und ein Meer von Regen", 
