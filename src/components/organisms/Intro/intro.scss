@@ -23,6 +23,17 @@
     margin-left: -50px;
     margin-top: -50px;
   }
+
+  @media only screen and (max-width: 400px) {
+    img {
+      max-width: 100px !important;
+      height: auto !important;
+    }
+    h5 {
+      font-size: 2em !important;
+      padding-bottom: 1em !important;
+    }
+  }
 }
 
 /** 
