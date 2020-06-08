@@ -1,79 +1,79 @@
-#gallery{
-    background-color: black;
-    // Checkbox fill color
-    .form-check-input[type="checkbox"].filled-in:checked + label:after,
-    label.btn input[type="checkbox"].filled-in:checked + label:after{
-        border: 2px solid white !important;
-        background-color: white !important;
+#gallery {
+  background-color: black;
+  // Checkbox fill color
+  .form-check-input[type="checkbox"].filled-in:checked + label:after,
+  label.btn input[type="checkbox"].filled-in:checked + label:after {
+    border: 2px solid white !important;
+    background-color: white !important;
+  }
+  .form-check-input[type="checkbox"].filled-in:checked + label:before,
+  label.btn input[type="checkbox"].filled-in:checked + label:before {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  .col-md-3 {
+    align-self: center;
+    margin-bottom: 1em;
+    &.available {
+      &::after {
+        content: "Verfügbar";
+        position: relative;
+        padding: 0.2em;
+        text-align: center;
+        background-color: green;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
     }
-    .form-check-input[type="checkbox"].filled-in:checked + label:before,
-    label.btn input[type="checkbox"].filled-in:checked + label:before{
-        border-right: 2px solid black;
-        border-bottom: 2px solid black;
+    &.sold {
+      &:after {
+        content: "Nicht verfügbar";
+        position: relative;
+        padding: 0.2em;
+        text-align: center;
+        background-color: #2e2e2e;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
     }
-    .col-md-3{
-        align-self: center;
-        margin-bottom: 1em;
-        &.available{
-            &::after{
-                content: 'Verfügbar';
-                position: relative;
-                padding: .2em;
-                text-align: center;
-                background-color: green;
-                margin-left: auto;
-                margin-right: auto;
-                display: block;
-            }
-        }
-        &.sold{
-            &:after{
-                content: 'Nicht verfügbar';
-                position: relative;
-                padding: .2em;
-                text-align: center;
-                background-color: #2e2e2e;
-                margin-left: auto;
-                margin-right: auto;
-                display: block;
-            }
-        }
+  }
+  .view {
+    cursor: pointer;
+    transition: filter 0.5s ease;
+    &:hover {
+      filter: hue-rotate(50deg) grayscale(100%) contrast(200%);
     }
-    .view{
-        cursor: pointer;
-        transition: filter .5s ease;
-        &:hover{
-            filter: hue-rotate(50deg) grayscale(100%) contrast(200%);
-        }
-        &.active{
-            filter: hue-rotate(50deg) grayscale(100%) contrast(200%);
-        }
+    &.active {
+      filter: hue-rotate(50deg) grayscale(100%) contrast(200%);
     }
-    .modal-dialog{
-        .close{
-            color: red;
-            text-shadow: none;
-        }
-        .modal-content{
-            background-color: #2e2e2e !important;
-            .table{
-                color: #bebebe;
-
-            }
-            .table td, .table th{
-                border-top: 1px solid #4e4e4e;
-            }
-            .normalize{
-                font-size: 1em;
-            }
-        }
-        .modal-footer{
-            border-top: 1px solid gray;
-        }
+  }
+  .modal-dialog {
+    .close {
+      color: red;
+      text-shadow: none;
     }
+    .modal-content {
+      background-color: #2e2e2e !important;
+      .table {
+        color: #bebebe;
+      }
+      .table td,
+      .table th {
+        border-top: 1px solid #4e4e4e;
+      }
+      .normalize {
+        font-size: 1em;
+      }
+    }
+    .modal-footer {
+      border-top: 1px solid gray;
+    }
+  }
 }
 
 /** 
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2019 Werbeagentur Christian Aichner
+ * Copyright © 2019-2020 Werbeagentur Christian Aichner
  */

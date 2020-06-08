@@ -1,23 +1,23 @@
 @font-face {
   font-family: "norse";
-  src: url("./utilities/fonts/norse-webfont.woff2") format("woff2"),
-    url("./utilities/fonts/norse-webfont.woff") format("woff");
+  src: url("./fonts/norse-webfont.woff2") format("woff2"),
+    url("./fonts/norse-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "norsebold";
-  src: url("./utilities/fonts/norsebold-webfont.woff2") format("woff2"),
-    url("./utilities/fonts/norsebold-webfont.woff") format("woff");
+  src: url("./fonts/norsebold-webfont.woff2") format("woff2"),
+    url("./fonts/norsebold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "runes";
-  src: url("./utilities/fonts/futharkrunes-webfont.woff2") format("woff2"),
-    url("./utilities/fonts/futharkrunes-webfont.woff") format("woff");
+  src: url("./fonts/futharkrunes-webfont.woff2") format("woff2"),
+    url("./fonts/futharkrunes-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -31,10 +31,10 @@
 }
 
 .rune {
-  font-family: 'runes';
+  font-family: "runes";
 }
 
 /** 
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2019 Werbeagentur Christian Aichner
+ * Copyright © 2019-2020 Werbeagentur Christian Aichner
  */
