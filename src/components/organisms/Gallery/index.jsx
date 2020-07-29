@@ -79,8 +79,8 @@ class Gallery extends React.Component {
                   className={
                     this.state.showAvailable &&
                     (image.available
-                      ? "align-self-center available"
-                      : "align-self-center sold")
+                      ? "available"
+                      : "sold")
                   }
                 >
                   <MDBView

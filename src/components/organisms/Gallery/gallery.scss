@@ -12,29 +12,37 @@
     border-bottom: 2px solid black;
   }
   .col-md-3 {
-    align-self: center;
     margin-bottom: 1em;
+    position: relative;
+    height: 100%;
+
     &.available {
       &::after {
         content: "Verfügbar";
-        position: relative;
-        padding: 0.2em;
+        position: absolute;
+        left: auto;
+        width: auto;
+        right: auto;
+        top: 0;
+        padding: 0.2rem 0.4em;
         text-align: center;
-        background-color: green;
-        margin-left: auto;
-        margin-right: auto;
+        background-color: transparentize($color: #00c851, $amount: 0.6);
+        border: 1px #00c851 solid;
         display: block;
       }
     }
     &.sold {
       &:after {
         content: "Nicht verfügbar";
-        position: relative;
-        padding: 0.2em;
+        position: absolute;
+        left: auto;
+        width: auto;
+        right: auto;
+        top: 0;
+        padding: 0.2rem 0.4em;
         text-align: center;
-        background-color: #2e2e2e;
-        margin-left: auto;
-        margin-right: auto;
+        background-color: transparentize($color: #ff3547, $amount: 0.6);
+        border: 1px #ff3547 solid;
         display: block;
       }
     }
